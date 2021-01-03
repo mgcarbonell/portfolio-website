@@ -5,10 +5,16 @@ class Boiler extends Component {
     return (
       <div>
         <header className="App-header">
-          Hi! It's me, Mario Carbonell
+          <div>
+            Hi! It's me, Mario Carbonell
+          </div>
+          <div>
+            <p>We're under construction right now</p>
+          </div>
+          <div>
+            <a href="https://github.com/mgcarbonell">But checkout my beautiful Github in the meanwhile!</a>
+          </div>
         </header>
-        <p>We're under construction right now, but check out my github for the time being!</p>
-        <a href="https://github.com/mgcarbonell">My Beautiful Github</a>
       </div>
     );
   }
