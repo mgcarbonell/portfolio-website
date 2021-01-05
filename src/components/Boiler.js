@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade'
+import Slide from 'react-reveal/Slide'
 
 class Boiler extends Component {
   render() {
@@ -19,9 +20,9 @@ class Boiler extends Component {
             </Fade>
           </div>
           <div>
-          <Fade bottom>
+          <Slide bottom>
             <a href="https://github.com/mgcarbonell">But checkout my beautiful Github in the meanwhile!</a>
-          </Fade>
+          </Slide>
           </div>
         </header>
       </div>
