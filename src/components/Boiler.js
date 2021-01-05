@@ -21,7 +21,7 @@ class Boiler extends Component {
           </div>
           <div>
           <Slide bottom>
-            <a href="https://github.com/mgcarbonell">But checkout my beautiful Github in the meanwhile!</a>
+            <a href="https://github.com/mgcarbonell" style="color:#FF0000;">But checkout my beautiful Github in the meanwhile!</a>
           </Slide>
           </div>
         </header>
