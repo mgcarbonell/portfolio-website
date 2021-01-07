@@ -1,5 +1,3 @@
-// Interests Nontechnical: Music, games, reading, hiking, food (tacos)
-
 import React from 'react';
 
 const NonTechInterests = () => {

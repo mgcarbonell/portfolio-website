@@ -1,5 +1,3 @@
-// Stuff like Hi! I'm Mario Carbonell, something about Engineering and I'm a software dev
-
 import React from 'react';
 import { Link } from 'react-scroll';
 
@@ -14,3 +12,5 @@ const Home = () => {
 }
 
 export default Home;
+
+// Stuff like Hi! I'm Mario Carbonell, something about Engineering and I'm a software dev

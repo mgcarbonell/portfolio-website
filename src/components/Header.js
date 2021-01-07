@@ -1,6 +1,3 @@
-// flex justify-end for scroll
-// hamburger on minimize
-// social media in the center?
 
 import React from 'react';
 import { Link, animateScroll } from 'react-scroll';
@@ -8,9 +5,14 @@ import { Link, animateScroll } from 'react-scroll';
 const Header = () => {
   return (
     <div>
-      This is a header.
+      this is a header.
     </div>
   );
 }
 
 export default Header;
+
+// flex justify-end for scroll
+// hamburger on minimize
+// social media in the center?
+// I need social media icons
