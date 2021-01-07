@@ -4,11 +4,17 @@
 // Link to a resume
 
 import React from 'react';
+import Skills from './skills/Skills'
+import TechnicalInterests from './skills/TechnicalInterests'
+import NonTechInterests from './skills/NonTechInterests'
 
 const About = () => {
   return (
     <div>
       About Me
+      <Skills />
+      <TechnicalInterests />
+      <NonTechInterests />
     </div>
   );
 }
