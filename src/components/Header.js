@@ -3,6 +3,7 @@
 // social media in the center?
 
 import React from 'react';
+import { Link, animateScroll } from 'react-scroll';
 
 const Header = () => {
   return (
