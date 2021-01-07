@@ -1,20 +1,14 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import Home from './components/Home';
-import Projects from './components/Projects';
-import About from './components/About';
-import Contact from './components/Contact'
+import Home from './components/Home'
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <Router>
       <Home />
-      <Projects />
-      <About />
-      <Contact />
-    </div>
+    </Router>
   );
 }
 
