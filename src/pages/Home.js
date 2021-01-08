@@ -4,8 +4,7 @@ import { Link } from 'react-scroll';
 const Home = () => {
   return (
     <div>
-      <h1>Hi! It's me,</h1> 
-      <p>I'm Mario!</p>
+      <h1>Hi! It's me, Mario!</h1> 
       <Link to="contact" smooth={true} duration={1000}>Contact Me!</Link>
     </div>
   );

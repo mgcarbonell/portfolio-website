@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Home from './components/Home'
+import Home from './pages/Home'
 import { BrowserRouter as Router } from 'react-router-dom';
 
 
@@ -10,6 +10,6 @@ function App() {
       <Home />
     </Router>
   );
-}
+} 
 
 export default App;
