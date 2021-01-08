@@ -10,9 +10,9 @@ import {
   NavLinks
 } from './NavbarElements';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
 
-
+  
 
   return (
     <>
@@ -21,7 +21,7 @@ const Navbar = () => {
           <Logo to="/">
             MC
           </Logo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
