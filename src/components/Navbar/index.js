@@ -42,7 +42,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks to="contact">
-                Contact
+                Connect
               </NavLinks>
             </NavItem>
           </NavMenu>

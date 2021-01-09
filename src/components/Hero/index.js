@@ -1,8 +1,10 @@
-import React from 'react'
-import Video from '../../../public/assets/video.mp4'
+import React from 'react';
+import Video from '../../assets/video.mp4';
 import {
-
-}
+  HeroContainer,
+  HeroBg,
+  VideoBg,
+} from './HeroElements';
 
 const Hero = () => {
   return (
