@@ -11,7 +11,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from './HeroElements';
-import { Button } from '../ButtonElement'
+import { Button } from '../ButtonElements'
 import Typical from 'react-typical';
 import Zoom from 'react-reveal/Zoom'
 
@@ -35,7 +35,6 @@ const Hero = () => {
           </HeroH1>
         </Zoom>
         <HeroP> I'm{' '}
-
           <Typical 
             loop={Infinity}
             steps={[

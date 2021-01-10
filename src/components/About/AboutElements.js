@@ -48,7 +48,7 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
-`
+`;
 
 export const TopLine = styled.p`
   color: #03fff9;
@@ -73,6 +73,7 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
+  font-family: 'Lato';
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
@@ -83,17 +84,25 @@ export const Subtitle = styled.p`
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
+  max-width: 500px;
   height: 100%;
 `;
 
 export const Img = styled.img`
   width: 100%;
+  height: auto;
   margin: 0 0 10px 0;
   padding-right: 0;
+
+  @media screen and (max-width: 480px){
+    width: 60%;
+    height: 60%
+  }
 `;
 
 export const CertLink = styled.a`
@@ -107,4 +116,17 @@ export const CertLink = styled.a`
   &:Hover {
     border-bottom: 3px solid #OOFFFF;
   }
-`
+`;
+
+export const ResumeLink = styled.a`
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+
+  &:Hover {
+    border-bottom: 3px solid #OOFFFF;
+  }
+`;
