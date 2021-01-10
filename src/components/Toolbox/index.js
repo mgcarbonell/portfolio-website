@@ -25,10 +25,18 @@ const Toolbox = ({
   lightText, 
   headLine,
   darkText, 
-  paragraph1,
-  paragraph2, 
+  skill1, 
+  skill2, 
+  skill3, 
+  skill4, 
+  skill5, 
+  skill6, 
+  skill7, 
+  skill8, 
+  skill9, 
+  skill10, 
+  skill11,
   buttonLabel, 
-  alt,
   primary,
   dark,
   dark2 
@@ -47,13 +55,37 @@ const Toolbox = ({
                   { headLine }
                 </Heading>
                 <Subtitle darkText={darkText}>
-                  { paragraph1 }
+                  { skill1 }
                 </Subtitle>
                 <Subtitle darkText={darkText}>
-                  { paragraph2 }
+                  { skill3 }
+                </Subtitle>
+                <Subtitle darkText={darkText}>
+                  { skill4 }
+                </Subtitle>
+                <Subtitle darkText={darkText}>
+                  { skill5 }
+                </Subtitle>
+                <Subtitle darkText={darkText}>
+                  { skill6 }
+                </Subtitle>
+                <Subtitle darkText={darkText}>
+                  { skill7 }
+                </Subtitle>
+                <Subtitle darkText={darkText}>
+                  { skill8 }
+                </Subtitle>
+                <Subtitle darkText={darkText}>
+                  { skill9 }
+                </Subtitle>
+                <Subtitle darkText={darkText}>
+                  { skill10 }
+                </Subtitle>
+                <Subtitle darkText={darkText}>
+                  { skill11 }
                 </Subtitle>
                 <BtnWrap>
-                  <Button to="toolbox"
+                  <Button to="projects"
                     smooth={true}
                     duration={500}
                     spy={true}
