@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
   HeroContainer,
+  VantaBg,
   HeroBg,
   HeroContent,
   HeroH1,
@@ -9,6 +10,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from './HeroElements';
+import { Button } from '../ButtonElements'
 import Typical from 'react-typical';
 import Zoom from 'react-reveal/Zoom'
 import * as THREE from 'three'
@@ -42,7 +44,7 @@ const Hero = () => {
   }
 
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <HeroBg>
         <VantaBg ref={myRef} />
       </HeroBg>
@@ -53,10 +55,8 @@ const Hero = () => {
           </HeroH1>
         </Zoom>
         <HeroP> I'm{' '}
-
           <Typical 
             loop={Infinity}
-            wrapper="b" 
             steps={[
               "a software engineer",
               1000,
@@ -68,7 +68,7 @@ const Hero = () => {
               1000,
               "intensely curious",
               1000,
-              "looking to the next tech horizon",
+              "looking to the next tech horizon.",
               3000,
             ]}
           />
@@ -78,6 +78,8 @@ const Hero = () => {
             to="contact"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
+            primary="true"
+            dark="true"
           >
             Connect! {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
