@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Video from '../../assets/video.mp4';
 import {
   HeroContainer,
@@ -7,11 +7,21 @@ import {
   HeroContent,
   HeroH1,
   HeroP,
+  HeroBtnWrapper,
+  ArrowForward,
+  ArrowRight,
 } from './HeroElements';
 import Typical from 'react-typical';
 import Zoom from 'react-reveal/Zoom'
 
 const Hero = () => {
+
+  const [hover, setHover] = useState(false)
+
+  const onHover = () => {
+    setHover(!hover)
+  }
+
   return (
     <HeroContainer>
       <HeroBg>
@@ -44,6 +54,15 @@ const Hero = () => {
             ]}
           />
         </HeroP>
+        <HeroBtnWrapper>
+          <Button 
+            to="contact"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+          >
+            Connect! {hover ? <ArrowForward /> : <ArrowRight />}
+          </Button>
+        </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
   )
