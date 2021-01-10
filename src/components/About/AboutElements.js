@@ -88,10 +88,23 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
-`
+`;
 
 export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+`;
+
+export const CertLink = styled.a`
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+
+  &:Hover {
+    border-bottom: 3px solid #OOFFFF;
+  }
 `

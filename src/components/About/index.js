@@ -1,5 +1,5 @@
-import React from 'react'
-import { Button } from 'react-scroll'
+import React from 'react';
+import { Button } from 'react-scroll';
 import {
   AboutContainer,
   AboutWrapper,
@@ -12,8 +12,10 @@ import {
   Subtitle,
   BtnWrap,
   ImgWrap,
-  Img
-} from './AboutElements'
+  Img,
+  CertLink
+} from './AboutElements';
+import Cert from '../../pdf/gacertificate1609095570.pdf';
 
 const About = () => {
   return (
@@ -41,6 +43,7 @@ const About = () => {
               <ImgWrap>
                 <Img />
               </ImgWrap>
+              <CertLink href={Cert}>Certified Software Engineer</CertLink>
             </Column2>
           </AboutRow>
         </AboutWrapper>
