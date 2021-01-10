@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import About from '../components/About';
+import { aboutObj } from '../components/About/AboutData';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
@@ -13,10 +14,10 @@ const Home = () => {
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle}/>
-      <Navbar toggle={toggle}/>
+      <Sidebar isOpen={ isOpen } toggle={ toggle }/>
+      <Navbar toggle={ toggle }/>
       <Hero />
-      <About />
+      <About {...aboutObj}/>
     </>
   );
 }
