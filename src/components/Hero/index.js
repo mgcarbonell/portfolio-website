@@ -54,9 +54,10 @@ const Hero = () => {
             Hi! It's me, Mario!
           </HeroH1>
         </Zoom>
-        <HeroP> I'm{' '}
-          <Typical 
+        <HeroP>I'm{' '}
+        <Typical 
             loop={Infinity}
+            wrapper={'b'}
             steps={[
               "a software engineer",
               1000,
