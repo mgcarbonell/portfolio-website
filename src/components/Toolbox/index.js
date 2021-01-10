@@ -14,7 +14,15 @@ import {
   ImgWrap,
   Img,
 
-} from './ToolboxElements'
+} from './ToolboxElements';
+import ReactIcon from '../../icons/002-atom.png';
+import Python from '../../icons/001-python.png';
+import Javascript from '../../icons/javascript_icon.png'
+import Postgres from '../../icons/postgres.png'
+import Nodejs from '../../icons/node_js.png'
+import MarkupLanguage from '../../icons/html_css.png'
+import MySQL from '../../icons/mysql.png'
+import LinuxPenguin from '../../icons/004-linux.png'
 
 
 const Toolbox = ({ 
@@ -48,14 +56,17 @@ const Toolbox = ({
           <ToolboxRow imgStart={ imgStart }>
             <Column1>
               <TextWrapper>
-                <TopLine lightText={lightText}>
+                <TopLine darkText={darkText}>
                   { topLine }
                 </TopLine>
-                <Heading lightText={lightText}>
+                <Heading darkText={darkText}>
                   { headLine }
                 </Heading>
                 <Subtitle darkText={darkText}>
                   { skill1 }
+                </Subtitle>
+                <Subtitle darkText={darkText}>
+                  { skill2 }
                 </Subtitle>
                 <Subtitle darkText={darkText}>
                   { skill3 }
@@ -102,7 +113,14 @@ const Toolbox = ({
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img/>
+                <Img src={ Javascript } alt="Javascript"/>
+                <Img src={ Python } alt="Python"/>
+                <Img src={ MarkupLanguage } alt="HTML5/CSS3"/>
+                <Img src={ Nodejs } alt="Node.js"/>
+                <Img src={ ReactIcon } alt="React"/>
+                <Img src={ Postgres } alt="PostgresQL"/>
+                <Img src={ MySQL } alt="MySQL"/>
+                <Img src={ LinuxPenguin } alt="Linux"/>
               </ImgWrap>
             </Column2>
           </ToolboxRow>

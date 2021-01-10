@@ -1,7 +1,7 @@
 export const toolboxObj = {
   id: 'about',
   lightBg: true,
-  lightText: false,
+  lightText: true,
   lightTextDesc: false,
   topLine: 'My Toolbox',
   headline: 'Languages & Skills',
@@ -13,7 +13,7 @@ export const toolboxObj = {
   skill6: `Postgres`,
   skill7: `MySQL`,
   skill8: `RESTful APIs`,
-  skill9: `AJAX`,
+  skill9: `Linux`,
   skill10: `Security Concepts`,
   skill11: `Websockets/Network Protocols`,
   buttonLabel: `To Projects`,

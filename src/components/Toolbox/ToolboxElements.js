@@ -76,58 +76,43 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
   font-family: 'Lato';
   max-width: 440px;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? '#01060' : '#fff')};
+  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
 `;
 
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 `;
 
 export const ImgWrap = styled.div`
+  display: flex;
+  flex-direction: column;
   max-width: 500px;
   height: 100%;
+  margin-top: -70px;
 `;
 
 export const Img = styled.img`
-  width: 100%;
-  height: auto;
-  margin: 0 0 10px 0;
+  width: 55px;
+  height: 55px;
+  margin: 0 0 15px 0;
   padding-right: 0;
 
+  &:hover {
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
   @media screen and (max-width: 480px){
-    width: 60%;
-    height: 60%
+    width: 40px;
+    height: 50px
   }
+
 `;
 
-export const CertLink = styled.a`
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-
-  &:Hover {
-    border-bottom: 3px solid #OOFFFF;
-  }
-`;
-
-export const ResumeLink = styled.a`
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-
-  &:Hover {
-    border-bottom: 3px solid #OOFFFF;
-  }
-`;
