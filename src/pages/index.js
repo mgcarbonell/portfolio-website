@@ -3,6 +3,7 @@ import About from '../components/About';
 import { aboutObj } from '../components/About/AboutData';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
+import Projects from '../components/Projects';
 import Sidebar from '../components/Sidebar';
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <Navbar toggle={ toggle }/>
       <Hero />
       <About {...aboutObj}/>
+      <Projects />
     </>
   );
 }
