@@ -38,7 +38,6 @@ const Hero = () => {
 
           <Typical 
             loop={Infinity}
-            wrapper="b" 
             steps={[
               "a software engineer",
               1000,
