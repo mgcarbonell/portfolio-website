@@ -1,12 +1,15 @@
+import React from 'react';
 import './App.css';
-import Boiler from './components/Boiler'
+import Home from './pages'
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <Boiler />
-    </div>
+    <Router>
+      <Home />
+    </Router>
   );
-}
+} 
 
 export default App;
