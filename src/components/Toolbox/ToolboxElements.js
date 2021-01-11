@@ -14,7 +14,7 @@ export const ToolboxContainer = styled.div`
 export const ToolboxWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 820px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
