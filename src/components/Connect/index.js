@@ -8,20 +8,10 @@ import {
   ImgWrap,
   Img,
   BtnWrap,
-  ArrowDown,
-  ArrowDownward,
+  ArrowUp,
+  ArrowUpward,
   Column2,
-<<<<<<< HEAD
   IconLink
-=======
-  FormWrap,
-  FormContent,
-  Form,
-  FormH1,
-  FormLabel,
-  FormInput,
-  FormButton
->>>>>>> d91ecd1e4719ef0b96fe9a0821d6df329a00212f
 } from './ConnectElements';
 import Gmail from '../../icons/gmail.png';
 import Twitter from '../../icons/013-twitter-1.png';
@@ -44,73 +34,69 @@ const Connect = () => {
           <ConnectRow>
             <Column1>
               <ImgWrap>
-<<<<<<< HEAD
-                <IconLink>
+                <IconLink
+                  target="_blank"
+                  href ="mailto: mgcarbonell@gmail.com"
+                  aria-label="Gmail"
+                >
                   <Img src={Gmail}/>
                 </IconLink>
-                <IconLink>
+                <IconLink
+                  target="_blank"
+                  href="https://github.com/mgcarbonell"
+                  aria-label="Github"
+                >
                   <Img src={Github}/>
                 </IconLink>
-                <IconLink>
+                <IconLink
+                  target="_blank"
+                  href="https://www.linkedin.com/in/mgcarbonell/"
+                  aria-label="Linkedin"
+                >
                   <Img src={Linkedin}/>
                 </IconLink>
-=======
-                <Img src={Gmail}/>
-                <Img src={Github}/>
-                <Img src={Linkedin}/>
-                <Img src={Twitter}/>
-                <Img src={HackerRank}/>
-                <Img src={LeetCode}/>
->>>>>>> d91ecd1e4719ef0b96fe9a0821d6df329a00212f
-                <BtnWrap>
-                    <Button to="projects"
-                      smooth={true}
-                      duration={500}
-                      spy={true}
-                      offset={-80}
-                      primary="true"
-                      dark="true"
-                      onMouseEnter={onHover}
-                      onMouseLeave={onHover}
-                    >
-                      Back To Top
-                      { hover ? <ArrowDownward /> : <ArrowDown /> }
-                    </Button>
-                  </BtnWrap>
               </ImgWrap>
             </Column1>
             <Column2>
-<<<<<<< HEAD
               <ImgWrap>
-                <IconLink>
+                <IconLink
+                  target="_blank"
+                  href="https://twitter.com/mgcarbonell1"
+                  aria-label="Twitter"
+                >
                   <Img src={Twitter}/>
                 </IconLink>
-                <IconLink>
+                <IconLink
+                  target="_blank"
+                  href="https://www.hackerrank.com/mgcarbonell"
+                  aria-label="HacerRank"
+                >
                   <Img src={HackerRank}/>
                 </IconLink>
-                <IconLink>
+                <IconLink
+                  target="_blank"
+                  href="https://leetcode.com/mgcarbonell/"
+                  aria-label="LeetCode"
+                >
                   <Img src={LeetCode}/>
                 </IconLink>
               </ImgWrap>
-=======
-              <FormWrap>
-                <FormContent>
-                  <Form action='#'>
-                    <FormH1>Contact Me!</FormH1>
-                    <FormLabel htmlFor='for'>Name</FormLabel>
-                    <FormInput type='name' required />
-                    <FormLabel htmlFor='for'>Email</FormLabel>
-                    <FormInput type='email' required />
-                    <FormLabel htmlFor='for'>Subject</FormLabel>
-                    <FormInput type='subject' required />
-                    <FormLabel htmlFor='for'>Message</FormLabel>
-                    <FormInput type='message' required />
-                    <FormButton type='submit'>Continue</FormButton>
-                  </Form>
-                </FormContent>
-              </FormWrap>
->>>>>>> d91ecd1e4719ef0b96fe9a0821d6df329a00212f
             </Column2>
+            <BtnWrap>
+              <Button to="projects"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+                primary="true"
+                dark="true"
+                onMouseEnter={onHover}
+                onMouseLeave={onHover}
+              >
+                Back To Top
+                { hover ? <ArrowUpward /> : <ArrowUp /> }
+              </Button>
+            </BtnWrap>
           </ConnectRow>
         </ConnectWrapper>
       </ConnectContainer>
