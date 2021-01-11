@@ -106,7 +106,7 @@ const Connect = () => {
               </ImgWrap>
             </Column2>
             <BtnWrap>
-              <Button to="projects"
+              <Button to="home"
                 smooth={true}
                 duration={500}
                 spy={true}
