@@ -25,7 +25,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="toolbox" onClick={toggle}>
             Toolbox
           </SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>
+          <SidebarLink to="connect" onClick={toggle}>
             Contact
           </SidebarLink>
         </SidebarMenu>

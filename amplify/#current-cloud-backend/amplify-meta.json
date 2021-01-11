@@ -1,0 +1,33 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-portfoliowebsite-dev-231425-authRole",
+      "UnauthRoleArn": "arn:aws:iam::238585963247:role/amplify-portfoliowebsite-dev-231425-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::238585963247:role/amplify-portfoliowebsite-dev-231425-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-portfoliowebsite-dev-231425-deployment",
+      "UnauthRoleName": "amplify-portfoliowebsite-dev-231425-unauthRole",
+      "StackName": "amplify-portfoliowebsite-dev-231425",
+      "StackId": "arn:aws:cloudformation:us-west-2:238585963247:stack/amplify-portfoliowebsite-dev-231425/a48d3440-53dc-11eb-99f7-0280c8c230c7",
+      "AmplifyAppId": "d287zktjzer63x"
+    }
+  },
+  "video": {
+    "videobg": {
+      "service": "video",
+      "serviceType": "video-on-demand",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-portfoliowebsite-dev-231425-deployment/amplify-cfn-templates/video/videobg-vod-workflow-template.yaml",
+        "logicalId": "videovideobg"
+      },
+      "lastPushTimeStamp": "2021-01-11T07:47:00.526Z",
+      "output": {
+        "oVodOutputUrl": "videobg-dev-output-2dz6styj.s3.us-west-2.amazonaws.com",
+        "oVODOutputS3": "videobg-dev-output-2dz6styj",
+        "oVODInputS3": "videobg-dev-input-2dz6styj"
+      },
+      "lastPushDirHash": "OdT1LvG2OqZ6nPTder9gd1TX+7c="
+    }
+  }
+}
