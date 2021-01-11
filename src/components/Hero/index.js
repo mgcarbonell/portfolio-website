@@ -34,18 +34,18 @@ const Hero = () => {
             It's me, Mario!
           </HeroH1>
         </Zoom>
-        <HeroP>I'm{' '}
+        <HeroP>
         <Typical 
             loop={Infinity}
             wrapper={'b'}
             steps={[
-              "a software engineer",
+              "Software engineer",
               1000,
-              "a fullstack developer",
+              "Fullstack developer",
               1000,
-              "an open sourcer",
+              "Open sourcer",
               1000,
-              "a web developer",
+              "Dreamer",
               1000,
 
             ]}

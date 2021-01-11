@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { MdKeyboardArrowDown, MdArrowDownward } from 'react-icons/md';
 
 export const ProjectsContainer = styled.div`
-  height: 800px;
+  height: 820px;
   display: flex;
   flex-direction: column;
   justify-content: center;
