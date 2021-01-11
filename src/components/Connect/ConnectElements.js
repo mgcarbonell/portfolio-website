@@ -173,7 +173,7 @@ export const FormButton = styled.button`
   cursor: pointer;
 `;
 
-export const ProjectLink = styled.a`
+export const IconLink = styled.a`
     text-decoration: none;
     color: #010101;
 `
