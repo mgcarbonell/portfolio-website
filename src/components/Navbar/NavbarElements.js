@@ -39,6 +39,10 @@ export const Logo = styled(LinkRouter)`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+
+  &:hover {
+    color: #03fff9;
+  }
 `;
 
 export const MobileIcon = styled.div`
@@ -89,8 +93,12 @@ export const NavLinks = styled(LinkScroll)`
   height: 100%;
   cursor: pointer;
 
+  &:hover {
+    color: #03fff9;
+  }
+
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px ridge #03fff9;
   }
 `;
 

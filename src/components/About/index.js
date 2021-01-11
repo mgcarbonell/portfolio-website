@@ -1,5 +1,5 @@
-import React from 'react'
-import { Button } from 'react-scroll'
+import React, { useState }  from 'react';
+import { Button } from '../ButtonElements';
 import {
   AboutContainer,
   AboutWrapper,
@@ -12,34 +12,87 @@ import {
   Subtitle,
   BtnWrap,
   ImgWrap,
-  Img
-} from './AboutElements'
+  Img,
+  CertLink,
+  ResumeLink,
+  ArrowDown,
+  ArrowDownward
+} from './AboutElements';
+import ItsMe from '../../images/photo1.jpg'
+import Cert from '../../pdf/gacertificate1609095570.pdf';
+import Resume from '../../pdf/MarioCarbonellDesignResume.pdf';
 
-const About = () => {
+const About = ({ 
+  lightBg, 
+  id, 
+  imgStart, 
+  topLine, 
+  lightText, 
+  headLine,
+  darkText, 
+  paragraph1,
+  paragraph2, 
+  buttonLabel, 
+  img, 
+  alt,
+  primary,
+  dark,
+  dark2 
+  }) => {
+
+  const [hover, setHover] = useState(false);
+
+  const onHover = () => {
+    setHover(!hover)
+  };
+
   return (
     <>
-      <AboutContainer>
+      <AboutContainer lightBg={ lightBg } id={ id }>
         <AboutWrapper>
-          <AboutRow>
+          <AboutRow imgStart={ imgStart }>
             <Column1>
               <TextWrapper>
                 <TopLine>
-                  Top Line
+                  { topLine }
                 </TopLine>
-                <Heading>
-                  Heading
+                <Heading lightText={lightText}>
+                  { headLine }
                 </Heading>
-                <Subtitle>
-                  Subtitle
+                <Subtitle darkText={darkText}>
+                  { paragraph1 }
                 </Subtitle>
+                <Subtitle darkText={darkText}>
+                  { paragraph2 }
+                </Subtitle>
+                <CertLink href={ Cert }>
+                  Certified Software Engineer
+                </CertLink>
+                <ResumeLink href= { Resume }>
+                  My Resume!
+                </ResumeLink>
                 <BtnWrap>
-                  <Button to="home" />
+                  <Button to="toolbox"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={ primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                    onMouseEnter={onHover}
+                    onMouseLeave={onHover}
+                  >
+                    { buttonLabel } 
+                    { hover ? <ArrowDownward /> : <ArrowDown /> }
+                  </Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img />
+                <Img src={ ItsMe } alt={ alt }/>
               </ImgWrap>
             </Column2>
           </AboutRow>

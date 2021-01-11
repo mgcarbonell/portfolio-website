@@ -1,20 +1,17 @@
 import styled from 'styled-components';
 import { MdKeyboardArrowDown, MdArrowDownward } from 'react-icons/md';
 
-export const AboutContainer = styled.div`
+
+export const ToolboxContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 
   @media screen and (max-width 768px) {
-    padding: 100px 0;
-  }
-
-  @media screen and (max-width 480px) {
-    padding-top: 100px 0;
+    padding: 80px 0;
   }
 `;
 
-export const AboutWrapper = styled.div`
+export const ToolboxWrapper = styled.div`
   display: grid;
   z-index: 1;
   height: 860px;
@@ -22,27 +19,27 @@ export const AboutWrapper = styled.div`
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 80px 24px 0px 24px;
+  padding: 0 24px;
   justify-content: center;
 
-  @media screen and (max-width 768px) {
-    padding: 100px 24px 0 24px;
-  }
-
-  @media screen and (max-width 480px) {
-    padding: 100px 24px 0 24px;
+  @media screen and (max-width: 480px) {
+    height: 860px
   }
 `;
 
-export const AboutRow = styled.div`
+export const ToolboxRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}
+    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1 col1' 'col2 col2 col2 col2'` : `'col1 col1' 'col2 col2'`)}
   };
+
+  @media screen and (max-width: 480px) {
+    grid-template-areas ${({ imgStart }) => (imgStart ? `'col1 col1' 'col2 col2 col2 col2'` : `'col1 col1' 'col2 col2'` )}
+  }
 `;
 
 export const Column1 = styled.div`
@@ -71,6 +68,7 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
 `;
 
 export const Heading = styled.h1`
@@ -88,59 +86,48 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
   font-family: 'Lato';
   max-width: 440px;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? '#01060' : '#fff')};
+  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
 `;
 
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 `;
 
 export const ImgWrap = styled.div`
+  display: flex;
+  flex-direction: column;
   max-width: 500px;
   height: 100%;
+  margin-top: -70px;
 `;
 
 export const Img = styled.img`
-  width: 100%;
-  height: auto;
-  margin: 0 0 10px 0;
+  width: 55px;
+  height: 55px;
+  margin: 0 0 15px 0;
   padding-right: 0;
 
+
   @media screen and (max-width: 480px){
-    width: 40%;
-    height: 40%
+    width: 30px;
+    height: 30px
   }
-`;
 
-export const CertLink = styled.a`
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-
-  &:Hover {
-    border-bottom: 3px solid #OOFFFF;
-  }
-`;
-
-export const ResumeLink = styled.a`
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-
-  &:Hover {
-    border-bottom: 3px solid #OOFFFF;
+  &:hover {
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
   }
 `;
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Video from '../../assets/video.mp4';
+import Video from '../../video/video.mp4';
 import {
   HeroContainer,
   HeroBg,
@@ -8,10 +8,10 @@ import {
   HeroH1,
   HeroP,
   HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight,
+  ArrowDownward,
+  ArrowDown,
 } from './HeroElements';
-import { Button } from '../ButtonElement'
+import { Button } from '../ButtonElements'
 import Typical from 'react-typical';
 import Zoom from 'react-reveal/Zoom'
 
@@ -31,13 +31,13 @@ const Hero = () => {
       <HeroContent>
         <Zoom>
           <HeroH1>
-            Hi! It's me, Mario!
+            It's me, Mario!
           </HeroH1>
         </Zoom>
-        <HeroP> I'm{' '}
-
-          <Typical 
+        <HeroP>I'm{' '}
+        <Typical 
             loop={Infinity}
+            wrapper={'b'}
             steps={[
               "a software engineer",
               1000,
@@ -47,22 +47,19 @@ const Hero = () => {
               1000,
               "a web developer",
               1000,
-              "intensely curious",
-              1000,
-              "looking to the next tech horizon.",
-              3000,
+
             ]}
           />
         </HeroP>
         <HeroBtnWrapper>
           <Button 
-            to="contact"
+            to="about"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
             dark="true"
           >
-            Connect! {hover ? <ArrowForward /> : <ArrowRight />}
+            Who Is Mario? {hover ? <ArrowDownward /> : <ArrowDown />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
