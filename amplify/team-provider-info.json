@@ -10,6 +10,13 @@
       "StackName": "amplify-portfoliowebsite-dev-231425",
       "StackId": "arn:aws:cloudformation:us-west-2:238585963247:stack/amplify-portfoliowebsite-dev-231425/a48d3440-53dc-11eb-99f7-0280c8c230c7",
       "AmplifyAppId": "d287zktjzer63x"
+    },
+    "categories": {
+      "video": {
+        "videobg": {
+          "s3UUID": "2dz6styj"
+        }
+      }
     }
   }
 }
