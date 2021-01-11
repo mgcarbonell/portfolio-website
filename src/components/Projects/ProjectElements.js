@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { MdKeyboardArrowDown, MdArrowDownward } from 'react-icons/md';
 
 export const ProjectsContainer = styled.div`
   height: 800px;
@@ -87,4 +88,21 @@ export const ProjectsP = styled.p`
 export const ProjectLink = styled.a`
     text-decoration: none;
     color: #010101;
-`
+`;
+
+export const ProjectBtnWrap = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+`;
+
+export const ArrowDownward = styled(MdArrowDownward)`
+  margin-left: 8px;
+  font-size: 20px;
+`;
+
+export const ArrowDown = styled(MdKeyboardArrowDown)`
+  margin-left: 8px;
+  font-size: 20px;
+`;

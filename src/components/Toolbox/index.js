@@ -13,6 +13,8 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
+  ArrowDownward,
+  ArrowDown
 
 } from './ToolboxElements';
 import * as THREE from 'three' 
@@ -52,9 +54,11 @@ const Toolbox = ({
   dark2 
   }) => {
 
-  const [vantaEffect, setVantaEffect] = useState(0)
+  const [hover, setHover] = useState(false);
 
-  const myRef = useRef(null)
+  const [vantaEffect, setVantaEffect] = useState(0);
+
+  const myRef = useRef(null);
 
   useEffect(() => {
     if (!vantaEffect) {
@@ -74,7 +78,11 @@ const Toolbox = ({
     return () => {
       if (vantaEffect) vantaEffect.destroy()
     }
-  }, [vantaEffect])
+  }, [vantaEffect]);
+
+  const onHover = () => {
+    setHover(!hover)
+  };
 
   return (
     <>
@@ -133,8 +141,11 @@ const Toolbox = ({
                       primary={ primary ? 1 : 0}
                       dark={dark ? 1 : 0}
                       dark2={dark2 ? 1 : 0}
+                      onMouseEnter={onHover}
+                      onMouseLeave={onHover}
                     >
-                      { buttonLabel }
+                      { buttonLabel } 
+                      { hover ? <ArrowDownward /> : <ArrowDown /> }
                     </Button>
                   </BtnWrap>
                 </TextWrapper>

@@ -8,8 +8,8 @@ import {
   HeroH1,
   HeroP,
   HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight,
+  ArrowDownward,
+  ArrowDown,
 } from './HeroElements';
 import { Button } from '../ButtonElements'
 import Typical from 'react-typical';
@@ -47,22 +47,19 @@ const Hero = () => {
               1000,
               "a web developer",
               1000,
-              "intensely curious",
-              1000,
-              "looking to the next tech horizon.",
-              3000,
+
             ]}
           />
         </HeroP>
         <HeroBtnWrapper>
           <Button 
-            to="contact"
+            to="about"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
             dark="true"
           >
-            Connect! {hover ? <ArrowForward /> : <ArrowRight />}
+            Who Is Mario? {hover ? <ArrowDownward /> : <ArrowDown />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

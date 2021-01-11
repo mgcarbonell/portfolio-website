@@ -15,7 +15,7 @@ import { FaGithub, FaLinkedin, FaTwitter} from 'react-icons/fa'
 
 const Footer = () => {
 
-  const goHome = () => {
+  const toggleHome = () => {
     scroll.scrollToTop();
   }
 
@@ -24,7 +24,7 @@ const Footer = () => {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to='/'>
+            <SocialLogo to='/' onClick={toggleHome}>
               Mario Carbonell
             </SocialLogo>
             <WebsiteRights>
