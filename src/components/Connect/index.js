@@ -52,7 +52,7 @@ const Connect = () => {
 
   return (
     <>
-      <ConnectContainer id="connect">
+      <ConnectContainer id="connect" ref = { myRef }>
         <ConnectWrapper>
           <ConnectRow>
             <Column1>
