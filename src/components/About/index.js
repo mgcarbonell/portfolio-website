@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import { Button } from '../ButtonElements';
 import {
   AboutContainer,
@@ -14,7 +14,9 @@ import {
   ImgWrap,
   Img,
   CertLink,
-  ResumeLink
+  ResumeLink,
+  ArrowDown,
+  ArrowDownward
 } from './AboutElements';
 import ItsMe from '../../images/photo1.jpg'
 import Cert from '../../pdf/gacertificate1609095570.pdf';
@@ -37,6 +39,13 @@ const About = ({
   dark,
   dark2 
   }) => {
+
+  const [hover, setHover] = useState(false);
+
+  const onHover = () => {
+    setHover(!hover)
+  };
+
   return (
     <>
       <AboutContainer lightBg={ lightBg } id={ id }>
@@ -72,8 +81,11 @@ const About = ({
                     primary={ primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
+                    onMouseEnter={onHover}
+                    onMouseLeave={onHover}
                   >
-                    { buttonLabel }
+                    { buttonLabel } 
+                    { hover ? <ArrowDownward /> : <ArrowDown /> }
                   </Button>
                 </BtnWrap>
               </TextWrapper>

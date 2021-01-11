@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Icon1 from '../../images/project1.png'
 import Icon2 from '../../images/project2.png'
 import Icon3 from '../../images/project3.png'
@@ -11,10 +11,21 @@ import {
   ProjectsIcon,
   ProjectsH2,
   ProjectsP,
-  ProjectLink
+  ProjectLink,
+  ProjectBtnWrap,
+  ArrowDownward,
+  ArrowDown
 } from './ProjectElements';
+import { Button } from '../ButtonElements'
 
 const Projects = () => {
+
+  const [hover, setHover] = useState(false)
+
+  const onHover = () => {
+    setHover(!hover)
+  }
+
   return (
     <ProjectsContainer id='projects'>
       <ProjectsH1>My Projects</ProjectsH1>
@@ -62,7 +73,22 @@ const Projects = () => {
             <ProjectsH2>zer0chat</ProjectsH2>
             <ProjectsP>Zerochat is a cyberpunk inspired chat room written in Postgres, Express, React, Node.js with socket.io (websockets integration for real time chatting.</ProjectsP>
           </ProjectsCard>
-        </ProjectLink>          
+        </ProjectLink>
+        <ProjectBtnWrap>
+          <Button to="connect"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact={true}
+            offset={-80}
+            primary="true"
+            dark="true"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+          >
+            Let's Connect! {hover ? <ArrowDownward /> : <ArrowDown /> }
+          </Button>
+        </ProjectBtnWrap>
       </ProjectsWrapper>
     </ProjectsContainer>
   )

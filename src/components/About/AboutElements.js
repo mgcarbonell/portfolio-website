@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { MdKeyboardArrowDown, MdArrowDownward } from 'react-icons/md';
 
 export const AboutContainer = styled.div`
   color: #fff;
@@ -141,4 +142,14 @@ export const ResumeLink = styled.a`
   &:Hover {
     border-bottom: 3px solid #OOFFFF;
   }
+`;
+
+export const ArrowDownward = styled(MdArrowDownward)`
+  margin-left: 8px;
+  font-size: 20px;
+`;
+
+export const ArrowDown = styled(MdKeyboardArrowDown)`
+  margin-left: 8px;
+  font-size: 20px;
 `;

@@ -171,9 +171,13 @@ export const FormButton = styled.button`
   color: #fff;
   font-size: 20px;
   cursor: pointer;
+<<<<<<< HEAD
 `;
 
 export const IconLink = styled.a`
     text-decoration: none;
     color: #010101;
 `
+=======
+`;
+>>>>>>> d91ecd1e4719ef0b96fe9a0821d6df329a00212f

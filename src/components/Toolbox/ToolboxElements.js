@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { MdKeyboardArrowDown, MdArrowDownward } from 'react-icons/md';
+
 
 export const ToolboxContainer = styled.div`
   color: #fff;
@@ -129,3 +131,12 @@ export const Img = styled.img`
   }
 `;
 
+export const ArrowDownward = styled(MdArrowDownward)`
+  margin-left: 8px;
+  font-size: 20px;
+`;
+
+export const ArrowDown = styled(MdKeyboardArrowDown)`
+  margin-left: 8px;
+  font-size: 20px;
+`;

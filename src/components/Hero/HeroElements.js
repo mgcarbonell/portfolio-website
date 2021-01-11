@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
+import { MdKeyboardArrowDown, MdArrowDownward } from 'react-icons/md';
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -74,7 +74,7 @@ export const HeroH1 = styled.h1`
   @media screen and (max-width: 768px) {
     font-size: 32px;
   }
-`
+`;
 
 export const HeroP = styled.p`
   font-family: 'monospace';
@@ -91,7 +91,7 @@ export const HeroP = styled.p`
   @media screen and (max-width: 768px) {
     font-size: 18px;
   }
-`
+`;
 
 export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
@@ -100,12 +100,12 @@ export const HeroBtnWrapper = styled.div`
   align-items: center;
 `
 
-export const ArrowForward = styled(MdArrowForward)`
+export const ArrowDownward = styled(MdArrowDownward)`
   margin-left: 8px;
   font-size: 20px;
-`
-export const ArrowRight = styled(MdKeyboardArrowRight)`
+`;
+
+export const ArrowDown = styled(MdKeyboardArrowDown)`
   margin-left: 8px;
   font-size: 20px;
-`
-/* instead of a VideoBg I might want a react-reveal picture gallery, 3 of the photos I have in public */
+`;
