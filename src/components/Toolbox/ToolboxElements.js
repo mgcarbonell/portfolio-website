@@ -8,6 +8,7 @@ export const ToolboxContainer = styled.div`
 
   @media screen and (max-width 768px) {
     padding: 80px 0;
+    background: #e1e3e3;
   }
 `;
 
