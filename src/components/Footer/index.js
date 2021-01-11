@@ -2,13 +2,16 @@ import React from 'react';
 import { 
   FooterContainer,
   FooterWrap,
-  FooterLinksContainer,
-  FooterLinksWrapper,
-  FooterLinkItems,
-  FooterLinkTitle,
-  FooterLink
- } from './FooterElements';
+  SocialMedia,
+  SocialMediaWrap,
+  SocialLogo,
+  WebsiteRights,
+  SocialIcons,
+  SocialIconLink
+} from './FooterElements';
 import { animateScroll as scroll } from 'react-scroll';
+import { FaGithub, FaLinkedin, FaTwitter} from 'react-icons/fa'
+
 
 const Footer = () => {
 
@@ -19,20 +22,27 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrap>
-        <FooterLinksContainer>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle to='/' onClick={goHome}>
-                Mario Carbonell
-              </FooterLinkTitle>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLink href="" target="_blank">
-                <Icon src={}/>
-              </FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-        </FooterLinksContainer>
+        <SocialMedia>
+          <SocialMediaWrap>
+            <SocialLogo to='/'>
+              Mario Carbonell
+            </SocialLogo>
+            <WebsiteRights>
+              Mario Carbonell © {new Date().getFullYear()} All rights reserved.
+            </WebsiteRights>
+            <SocialIcons>
+              <SocialIconLink href="https://github.com/mgcarbonell" target="_blank" aria-label="Mario's Github">
+                <FaGithub />
+              </SocialIconLink>
+              <SocialIconLink href="https://www.linkedin.com/in/mgcarbonell/" target="_blank" aria-label="Mario's LinkedIn">
+                <FaLinkedin />
+              </SocialIconLink>
+              <SocialIconLink href="https://twitter.com/mgcarbonell1" target="_blank" aria-label="Mario's Twitter">
+                <FaTwitter />
+              </SocialIconLink>
+            </SocialIcons>
+          </SocialMediaWrap>
+        </SocialMedia>
       </FooterWrap>
     </FooterContainer>
   )

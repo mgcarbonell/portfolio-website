@@ -7,6 +7,10 @@ export const AboutContainer = styled.div`
   @media screen and (max-width 768px) {
     padding: 100px 0;
   }
+
+  @media screen and (max-width 480px) {
+    padding-top: 100px 0;
+  }
 `;
 
 export const AboutWrapper = styled.div`
@@ -17,8 +21,16 @@ export const AboutWrapper = styled.div`
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
+  padding: 80px 24px 0px 24px;
   justify-content: center;
+
+  @media screen and (max-width 768px) {
+    padding: 100px 24px 0 24px;
+  }
+
+  @media screen and (max-width 480px) {
+    padding: 100px 24px 0 24px;
+  }
 `;
 
 export const AboutRow = styled.div`
@@ -100,8 +112,8 @@ export const Img = styled.img`
   padding-right: 0;
 
   @media screen and (max-width: 480px){
-    width: 60%;
-    height: 60%
+    width: 40%;
+    height: 40%
   }
 `;
 

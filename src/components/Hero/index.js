@@ -31,7 +31,7 @@ const Hero = () => {
       <HeroContent>
         <Zoom>
           <HeroH1>
-            Hi! It's me, Mario!
+            It's me, Mario!
           </HeroH1>
         </Zoom>
         <HeroP>I'm{' '}

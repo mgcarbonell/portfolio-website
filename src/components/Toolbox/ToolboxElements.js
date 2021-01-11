@@ -5,7 +5,7 @@ export const ToolboxContainer = styled.div`
   background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 
   @media screen and (max-width 768px) {
-    padding: 100px 0;
+    padding: 80px 0;
   }
 `;
 
@@ -19,6 +19,10 @@ export const ToolboxWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    height: 860px
+  }
 `;
 
 export const ToolboxRow = styled.div`
@@ -28,8 +32,12 @@ export const ToolboxRow = styled.div`
   grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}
+    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1 col1' 'col2 col2 col2 col2'` : `'col1 col1' 'col2 col2'`)}
   };
+
+  @media screen and (max-width: 480px) {
+    grid-template-areas ${({ imgStart }) => (imgStart ? `'col1 col1' 'col2 col2 col2 col2'` : `'col1 col1' 'col2 col2'` )}
+  }
 `;
 
 export const Column1 = styled.div`
@@ -80,6 +88,11 @@ export const Subtitle = styled.p`
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
 `;
 
 export const BtnWrap = styled.div`
@@ -103,16 +116,16 @@ export const Img = styled.img`
   margin: 0 0 15px 0;
   padding-right: 0;
 
+
+  @media screen and (max-width: 480px){
+    width: 30px;
+    height: 30px
+  }
+
   &:hover {
     transform: scale(1.5);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
-
-  @media screen and (max-width: 480px){
-    width: 40px;
-    height: 50px
-  }
-
 `;
 
