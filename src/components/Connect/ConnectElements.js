@@ -42,7 +42,7 @@ export const ConnectRow = styled.div`
   grid-template-areas: 'col1 col2';
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: 'col1' 'col2'
+    grid-template-areas: 'col1 col2'
   };
 `;
 
@@ -85,8 +85,8 @@ export const Img = styled.img`
   }
 
   @media screen and (max-width: 480px){
-    width: 40%;
-    height: 40%
+    width: 80px;
+    height: 80px
   }
 `;
 
