@@ -6,18 +6,17 @@ export const AboutContainer = styled.div`
   background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 
   @media screen and (max-width 768px) {
-    padding: 100px 0;
+    padding: 100px 0 100px 0;
   }
 
   @media screen and (max-width 480px) {
-    padding-top: 100px 0;
+    padding-top: 100px 0 100px 0;
   }
 `;
 
 export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;

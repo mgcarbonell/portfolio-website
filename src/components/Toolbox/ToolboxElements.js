@@ -6,16 +6,19 @@ export const ToolboxContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 
-  @media screen and (max-width 768px) {
-    padding: 80px 0;
+  @media screen and (max-width: 768px) {
+    padding: 100px 0 100px 0;
     background: #e1e3e3;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 80px;
   }
 `;
 
 export const ToolboxWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 820px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -23,9 +26,6 @@ export const ToolboxWrapper = styled.div`
   padding: 0 24px;
   justify-content: center;
 
-  @media screen and (max-width: 480px) {
-    height: 860px
-  }
 `;
 
 export const ToolboxRow = styled.div`
@@ -40,7 +40,7 @@ export const ToolboxRow = styled.div`
 
   @media screen and (max-width: 480px) {
     grid-template-areas ${({ imgStart }) => (imgStart ? `'col1 col1' 'col2 col2 col2 col2'` : `'col1 col1' 'col2 col2'` )}
-  }
+  };
 `;
 
 export const Column1 = styled.div`

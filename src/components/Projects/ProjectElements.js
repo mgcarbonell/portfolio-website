@@ -2,19 +2,25 @@ import styled from 'styled-components';
 import { MdKeyboardArrowDown, MdArrowDownward } from 'react-icons/md';
 
 export const ProjectsContainer = styled.div`
-  height: 820px;
   display: flex;
+  padding: 80px
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #010606;
 
   @media screen and (max-width: 768px) {
-    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
   }
 `;
 
@@ -33,7 +39,7 @@ export const ProjectsWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 0 20px;
+    padding: 80px 0 20px 0;
   }
 `;
 

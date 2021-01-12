@@ -19,11 +19,11 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="about" onClick={toggle}>
             About
           </SidebarLink>
-          <SidebarLink to="projects" onClick={toggle}>
-            Projects
-          </SidebarLink>
           <SidebarLink to="toolbox" onClick={toggle}>
             Toolbox
+          </SidebarLink>
+          <SidebarLink to="projects" onClick={toggle}>
+            Projects
           </SidebarLink>
           <SidebarLink to="connect" onClick={toggle}>
             Contact
