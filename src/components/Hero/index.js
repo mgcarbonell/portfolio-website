@@ -59,7 +59,7 @@ const Hero = () => {
             primary="true"
             dark="true"
           >
-            Who Is Mario? {hover ? <ArrowDownward /> : <ArrowDown />}
+            About Me {hover ? <ArrowDownward /> : <ArrowDown />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
