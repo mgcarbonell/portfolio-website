@@ -54,7 +54,7 @@ const Projects = () => {
         </ProjectLink>          
         <ProjectLink
           target="_blank"
-          href="https://cuneiform-frontend.herokuapp.com"
+          href="https://github.com/mgcarbonell/cuneiform-frontend"
           aria-label="cuneiform"
         >
           <ProjectsCard>
