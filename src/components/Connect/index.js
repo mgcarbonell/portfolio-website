@@ -59,7 +59,7 @@ const Connect = () => {
               <ImgWrap>
                 <IconLink
                   target="_blank"
-                  href ="mailto: mgcarbonell@gmail.com"
+                  href ="mailto:mgcarbonell@gmail.com"
                   aria-label="Gmail"
                 >
                   <Img src={Gmail}/>
