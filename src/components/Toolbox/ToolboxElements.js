@@ -21,6 +21,8 @@ export const ToolboxWrapper = styled.div`
   z-index: 1;
   width: 100%;
   max-width: 1100px;
+  height: 100vh;
+  padding: 80px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;

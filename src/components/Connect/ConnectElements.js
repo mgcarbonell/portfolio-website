@@ -17,7 +17,7 @@ export const ConnectContainer = styled.div`
 export const ConnectWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 100vh;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
