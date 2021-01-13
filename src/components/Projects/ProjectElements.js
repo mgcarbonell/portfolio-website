@@ -4,6 +4,7 @@ import { MdKeyboardArrowDown, MdArrowDownward } from 'react-icons/md';
 export const ProjectsContainer = styled.div`
   display: flex;
   padding: 80px
+  height: 100%
   flex-direction: column;
   justify-content: center;
   align-items: center;
