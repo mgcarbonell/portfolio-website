@@ -11,9 +11,10 @@ import {
   ArrowDownward,
   ArrowDown,
 } from './HeroElements';
-import { Button } from '../ButtonElements'
-import Typical from 'react-typical';
-import Zoom from 'react-reveal/Zoom'
+import { Button } from '../ButtonElements';
+// import Typical from 'react-typical';
+import Typewriter from 'typewriter-effect';
+import Zoom from 'react-reveal/Zoom';
 
 const Hero = () => {
 
@@ -35,20 +36,18 @@ const Hero = () => {
           </HeroH1>
         </Zoom>
         <HeroP>
-        <Typical 
-            loop={Infinity}
-            wrapper={'b'}
-            steps={[
+        <Typewriter
+            options={{
+              strings: [
               "Software engineer",
-              1000,
               "Fullstack developer",
-              1000,
               "Open sourcer",
-              1000,
               "Dreamer",
-              1000,
-
-            ]}
+              ],
+              autoStart: true,
+              loop: true,
+              pauseFor: 1000,
+            }}
           />
         </HeroP>
         <HeroBtnWrapper>

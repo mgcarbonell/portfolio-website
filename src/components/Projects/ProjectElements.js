@@ -10,6 +10,10 @@ export const ProjectsContainer = styled.div`
   align-items: center;
   background: #010606;
 
+  @media screen and (max-width: 1000px) {
+    padding: 100px 0 40px 0;
+  }
+
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -35,6 +39,7 @@ export const ProjectsWrapper = styled.div`
   padding: 0 50px;
 
   @media screen and (max-width: 1000px) {
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -62,12 +67,20 @@ export const ProjectsCard = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
+  @media screen and (max-width: 1000px){
+    height: 300px
+  }
 `;
 
 export const ProjectsIcon = styled.img`
   height: 160px;
   width: 160px;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 1000px) {
+    height: 120px;
+    width: 120px;
+  }
 `;
 
 export const ProjectsH1 = styled.h1`

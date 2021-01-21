@@ -5,12 +5,16 @@ export const ConnectContainer = styled.div`
   color: #fff;
   background: #f9f9f9;
 
+  @media screen and (max-width 1000px) {
+    padding: 80px 0;
+  }
+
   @media screen and (max-width 768px) {
-    padding: 100px 0;
+    padding: 80px 0;
   }
 
   @media screen and (max-width 480px) {
-    padding-top: 100px 0;
+    padding-top: 80px 0;
   }
 `;
 
