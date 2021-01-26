@@ -89,20 +89,6 @@ const Connect = () => {
                 >
                   <Img src={Twitter}/>
                 </IconLink>
-                <IconLink
-                  target="_blank"
-                  href="https://www.hackerrank.com/mgcarbonell"
-                  aria-label="HacerRank"
-                >
-                  <Img src={HackerRank}/>
-                </IconLink>
-                <IconLink
-                  target="_blank"
-                  href="https://leetcode.com/mgcarbonell/"
-                  aria-label="LeetCode"
-                >
-                  <Img src={LeetCode}/>
-                </IconLink>
               </ImgWrap>
             </Column2>
             <BtnWrap>
