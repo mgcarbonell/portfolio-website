@@ -64,6 +64,10 @@ const Connect = () => {
                 >
                   <Img src={Gmail}/>
                 </IconLink>
+              </ImgWrap>
+            </Column1>
+            <Column2>
+              <ImgWrap>
                 <IconLink
                   target="_blank"
                   href="https://github.com/mgcarbonell"
@@ -78,10 +82,6 @@ const Connect = () => {
                 >
                   <Img src={Linkedin}/>
                 </IconLink>
-              </ImgWrap>
-            </Column1>
-            <Column2>
-              <ImgWrap>
                 <IconLink
                   target="_blank"
                   href="https://twitter.com/mgcarbonell1"
