@@ -20,7 +20,7 @@ import {
 } from './AboutElements';
 import ItsMe from '../../images/photo1.jpg'
 import Cert from '../../pdf/gacertificate1609095570.pdf';
-import Resume from '../../pdf/MarioCarbonellDesignResume.pdf';
+import Resume from '../../pdf/MarioCarbonellDesignResume2021.pdf';
 
 const About = ({ 
   lightBg, 
