@@ -125,9 +125,14 @@ export const CertLink = styled.a`
   height: 100%;
   width: 100%;
   cursor: pointer;
+  color: aqua;
+  
+  &:visited {
+    color: dark-cyan;
+  }
 
-  &:Hover {
-    border-bottom: 3px solid #OOFFFF;
+  &:hover {
+    border-bottom: 3px ridge #00FFFF;
   }
 `;
 
@@ -138,9 +143,14 @@ export const ResumeLink = styled.a`
   height: 100%;
   width: 100%;
   cursor: pointer;
+  color: aqua;
 
-  &:Hover {
-    border-bottom: 3px solid #OOFFFF;
+  &:Visited {
+    color: aqua;
+  }
+
+  &:hover {
+    border-bottom: 3px ridge #00FFFF;
   }
 `;
 

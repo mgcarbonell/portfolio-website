@@ -65,10 +65,10 @@ const About = ({
                 <Subtitle darkText={darkText}>
                   { paragraph2 }
                 </Subtitle>
-                <CertLink href={ Cert }>
+                <CertLink href={ Cert } target="blank">
                   Certified Software Engineer
                 </CertLink>
-                <ResumeLink href= { Resume }>
+                <ResumeLink href= { Resume } target="blank">
                   My Resume!
                 </ResumeLink>
                 <BtnWrap>
