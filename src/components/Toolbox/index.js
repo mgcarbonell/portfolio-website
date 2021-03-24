@@ -131,6 +131,9 @@ const Toolbox = ({
                     <Subtitle darkText={darkText}>
                       { skill11 }
                     </Subtitle>
+                    <Subtitle darkText={darkText}>
+                      { skill12 }
+                    </Subtitle>
                   <BtnWrap>
                     <Button to="projects"
                       smooth={true}
