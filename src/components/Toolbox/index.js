@@ -19,7 +19,7 @@ import {
 } from './ToolboxElements';
 import * as THREE from 'three' 
 import CLOUDS from 'vanta/dist/vanta.clouds.min';
-import Fade from 'react-reveal/Slide';
+import { Fade } from 'react-awesome-reveal';
 import ReactIcon from '../../icons/002-atom.png';
 import Python from '../../icons/001-python.png';
 import Javascript from '../../icons/javascript_icon.png';
@@ -48,6 +48,7 @@ const Toolbox = ({
   skill9, 
   skill10, 
   skill11,
+  skill12,
   buttonLabel, 
   primary,
   dark,

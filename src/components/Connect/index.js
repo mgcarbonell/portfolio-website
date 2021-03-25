@@ -19,8 +19,7 @@ import Gmail from '../../icons/gmail.png';
 import Twitter from '../../icons/013-twitter-1.png';
 import Linkedin from '../../icons/031-linkedin.png';
 import Github from '../../icons/039-github.png';
-import HackerRank from '../../icons/HackerRank_logo.png';
-import LeetCode from '../../icons/LeetCode_logo_black.png';
+
 
 const Connect = () => {
   const [hover, setHover] = useState(false);

@@ -14,7 +14,7 @@ import {
 import { Button } from '../ButtonElements';
 // import Typical from 'react-typical';
 import Typewriter from 'typewriter-effect';
-import Zoom from 'react-reveal/Zoom';
+import { Zoom } from 'react-awesome-reveal';
 
 const Hero = () => {
 

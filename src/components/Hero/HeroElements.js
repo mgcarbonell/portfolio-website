@@ -8,7 +8,7 @@ export const HeroContainer = styled.div`
   align-items: center;
   padding: 0 30px;
   height: 890px;
-  max-height: 100%;
+  max-height: 100vh;
   position: relative;
   z-index: 1;
   
@@ -40,13 +40,13 @@ export const HeroBg = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 `;
 
 export const VideoBg = styled.video`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   -o-object-fit: cover;
   object-fit: cover;
   background: #232a34;
