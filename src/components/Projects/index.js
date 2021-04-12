@@ -65,7 +65,7 @@ const Projects = () => {
         </ProjectLink>          
         <ProjectLink
           target="_blank"
-          href="https://zer0chat.herokuapp.com"
+          href="https://github.com/mgcarbonell/zerochat-frontend"
           aria-label="zer0chat"
         >
           <ProjectsCard>
