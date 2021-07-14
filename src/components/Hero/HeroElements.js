@@ -79,7 +79,7 @@ export const HeroH1 = styled.h1`
 
 export const HeroP = styled.p`
   font-family: 'Lato';
-  margin-top 24px;
+  margin-top: 24px;
   color: #fff;
   font-size: 24px;
   text-align: center;
