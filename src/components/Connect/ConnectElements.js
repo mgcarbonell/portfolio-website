@@ -5,15 +5,15 @@ export const ConnectContainer = styled.div`
   color: #fff;
   background: #f9f9f9;
 
-  @media screen and (max-width 1000px) {
+  @media screen and (max-width: 1000px) {
     padding: 80px 0;
   }
 
-  @media screen and (max-width 768px) {
+  @media screen and (max-width: 768px) {
     padding: 80px 0;
   }
 
-  @media screen and (max-width 480px) {
+  @media screen and (max-width: 480px) {
     padding-top: 80px 0;
   }
 `;
@@ -30,11 +30,11 @@ export const ConnectWrapper = styled.div`
   justify-content: center;
   align-content: space-around;
 
-  @media screen and (max-width 768px) {
+  @media screen and (max-width: 768px) {
     padding: 100px 24px 0 24px;
   }
 
-  @media screen and (max-width 480px) {
+  @media screen and (max-width: 480px) {
     padding: 100px 24px 0 24px;
   }
 `;

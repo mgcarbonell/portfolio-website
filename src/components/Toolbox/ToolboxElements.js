@@ -41,7 +41,7 @@ export const ToolboxRow = styled.div`
   };
 
   @media screen and (max-width: 480px) {
-    grid-template-areas ${({ imgStart }) => (imgStart ? `'col1 col1' 'col2 col2 col2 col2'` : `'col1 col1' 'col2 col2'` )}
+    grid-template-areas ${({ imgStart }) => (imgStart ? `'col1 col1' 'col2 col2 col2 col2'` : `'col1 col1' 'col2 col2'`)}
   };
 `;
 

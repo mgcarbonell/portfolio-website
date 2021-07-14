@@ -50,7 +50,7 @@ export const ProjectsWrapper = styled.div`
 
   @media screen and (max-width: 480px){
     padding: 80px 0 20px 0;
-    margin 0 auto;
+    margin: 0 auto;
     grid-template-columns: 1fr;
   }
 `;

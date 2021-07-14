@@ -5,11 +5,11 @@ export const AboutContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 
-  @media screen and (max-width 768px) {
+  @media screen and (max-width: 768px) {
     padding: 100px 0 100px 0;
   }
 
-  @media screen and (max-width 480px) {
+  @media screen and (max-width: 480px) {
     padding-top: 100px 0 100px 0;
   }
 `;
@@ -25,11 +25,11 @@ export const AboutWrapper = styled.div`
   padding: 100px 24px 0px 24px;
   justify-content: center;
 
-  @media screen and (max-width 768px) {
+  @media screen and (max-width: 768px) {
     padding: 100px 24px 0 24px;
   }
 
-  @media screen and (max-width 480px) {
+  @media screen and (max-width: 480px) {
     padding: 100px 24px 0 24px;
   }
 `;
