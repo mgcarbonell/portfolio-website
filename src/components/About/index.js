@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React, { useState } from 'react';
 import { Button } from '../ButtonElements';
 import {
   AboutContainer,
@@ -20,25 +20,25 @@ import {
 } from './AboutElements';
 import ItsMe from '../../images/photo1.jpg'
 import Cert from '../../pdf/gacertificate1609095570.pdf';
-import Resume from '../../pdf/MarioCarbonellDesignResume2021.pdf';
+import Resume from '../../pdf/MarioCarbonellResume2021.pdf';
 
-const About = ({ 
-  lightBg, 
-  id, 
-  imgStart, 
-  topLine, 
-  lightText, 
+const About = ({
+  lightBg,
+  id,
+  imgStart,
+  topLine,
+  lightText,
   headLine,
-  darkText, 
+  darkText,
   paragraph1,
-  paragraph2, 
-  buttonLabel, 
-  img, 
+  paragraph2,
+  buttonLabel,
+  img,
   alt,
   primary,
   dark,
-  dark2 
-  }) => {
+  dark2
+}) => {
 
   const [hover, setHover] = useState(false);
 
@@ -48,27 +48,27 @@ const About = ({
 
   return (
     <>
-      <AboutContainer lightBg={ lightBg } id={ id }>
+      <AboutContainer lightBg={lightBg} id={id}>
         <AboutWrapper>
-          <AboutRow imgStart={ imgStart }>
+          <AboutRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
                 <TopLine>
-                  { topLine }
+                  {topLine}
                 </TopLine>
                 <Heading lightText={lightText}>
-                  { headLine }
+                  {headLine}
                 </Heading>
                 <Subtitle darkText={darkText}>
-                  { paragraph1 }
+                  {paragraph1}
                 </Subtitle>
                 <Subtitle darkText={darkText}>
-                  { paragraph2 }
+                  {paragraph2}
                 </Subtitle>
-                <CertLink href={ Cert } target="blank">
+                <CertLink href={Cert} target="blank">
                   Certified Software Engineer
                 </CertLink>
-                <ResumeLink href= { Resume } target="blank">
+                <ResumeLink href={Resume} target="blank">
                   My Resume!
                 </ResumeLink>
                 <BtnWrap>
@@ -78,21 +78,21 @@ const About = ({
                     spy={true}
                     exact="true"
                     offset={-80}
-                    primary={ primary ? 1 : 0}
+                    primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
                   >
-                    { buttonLabel } 
-                    { hover ? <ArrowDownward /> : <ArrowDown /> }
+                    {buttonLabel}
+                    {hover ? <ArrowDownward /> : <ArrowDown />}
                   </Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={ ItsMe } alt={ alt }/>
+                <Img src={ItsMe} alt={alt} />
               </ImgWrap>
             </Column2>
           </AboutRow>
