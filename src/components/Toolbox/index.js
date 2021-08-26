@@ -17,7 +17,7 @@ import {
   ArrowDown
 
 } from './ToolboxElements';
-import * as THREE from 'three' 
+import * as THREE from 'three'
 import CLOUDS from 'vanta/dist/vanta.clouds.min';
 import { Fade } from 'react-awesome-reveal';
 import ReactIcon from '../../icons/002-atom.png';
@@ -30,30 +30,30 @@ import MySQL from '../../icons/mysql.png';
 import LinuxPenguin from '../../icons/004-linux.png';
 
 
-const Toolbox = ({ 
-  lightBg, 
-  id, 
-  imgStart, 
-  topLine, 
+const Toolbox = ({
+  lightBg,
+  id,
+  imgStart,
+  topLine,
   headLine,
-  darkText, 
-  skill1, 
-  skill2, 
-  skill3, 
-  skill4, 
-  skill5, 
-  skill6, 
-  skill7, 
-  skill8, 
-  skill9, 
-  skill10, 
+  darkText,
+  skill1,
+  skill2,
+  skill3,
+  skill4,
+  skill5,
+  skill6,
+  skill7,
+  skill8,
+  skill9,
+  skill10,
   skill11,
   skill12,
-  buttonLabel, 
+  buttonLabel,
   primary,
   dark,
-  dark2 
-  }) => {
+  dark2
+}) => {
 
   const [hover, setHover] = useState(false);
 
@@ -87,54 +87,54 @@ const Toolbox = ({
 
   return (
     <>
-      <ToolboxContainer lightBg={ lightBg } id={ id } ref={ myRef }>
+      <ToolboxContainer lightBg={lightBg} id={id} ref={myRef}>
         <ToolboxWrapper>
-          <ToolboxRow imgStart={ imgStart }>
+          <ToolboxRow imgStart={imgStart}>
             <Column1>
               <Fade top cascade>
                 <TextWrapper>
                   <TopLine darkText={darkText}>
-                    { topLine }
+                    {topLine}
                   </TopLine>
                   <Heading darkText={darkText}>
-                    { headLine }
+                    {headLine}
                   </Heading>
-                    <Subtitle darkText={darkText}>
-                      { skill1 }
-                    </Subtitle>
-                    <Subtitle darkText={darkText}>
-                      { skill2 }
-                    </Subtitle>
-                    <Subtitle darkText={darkText}>
-                      { skill3 }
-                    </Subtitle>
-                    <Subtitle darkText={darkText}>
-                      { skill4 }
-                    </Subtitle>
-                    <Subtitle darkText={darkText}>
-                      { skill5 }
-                    </Subtitle>
-                    <Subtitle darkText={darkText}>
-                      { skill6 }
-                    </Subtitle>
-                    <Subtitle darkText={darkText}>
-                      { skill7 }
-                    </Subtitle>
-                    <Subtitle darkText={darkText}>
-                      { skill8 }
-                    </Subtitle>
-                    <Subtitle darkText={darkText}>
-                      { skill9 }
-                    </Subtitle>
-                    <Subtitle darkText={darkText}>
-                      { skill10 }
-                    </Subtitle>
-                    <Subtitle darkText={darkText}>
-                      { skill11 }
-                    </Subtitle>
-                    <Subtitle darkText={darkText}>
-                      { skill12 }
-                    </Subtitle>
+                  <Subtitle darkText={darkText}>
+                    {skill1}
+                  </Subtitle>
+                  <Subtitle darkText={darkText}>
+                    {skill2}
+                  </Subtitle>
+                  <Subtitle darkText={darkText}>
+                    {skill3}
+                  </Subtitle>
+                  <Subtitle darkText={darkText}>
+                    {skill4}
+                  </Subtitle>
+                  <Subtitle darkText={darkText}>
+                    {skill5}
+                  </Subtitle>
+                  <Subtitle darkText={darkText}>
+                    {skill6}
+                  </Subtitle>
+                  <Subtitle darkText={darkText}>
+                    {skill7}
+                  </Subtitle>
+                  <Subtitle darkText={darkText}>
+                    {skill8}
+                  </Subtitle>
+                  <Subtitle darkText={darkText}>
+                    {skill9}
+                  </Subtitle>
+                  <Subtitle darkText={darkText}>
+                    {skill10}
+                  </Subtitle>
+                  <Subtitle darkText={darkText}>
+                    {skill11}
+                  </Subtitle>
+                  <Subtitle darkText={darkText}>
+                    {skill12}
+                  </Subtitle>
                   <BtnWrap>
                     <Button to="projects"
                       smooth={true}
@@ -142,14 +142,14 @@ const Toolbox = ({
                       spy={true}
                       exact="true"
                       offset={-80}
-                      primary={ primary ? 1 : 0}
+                      primary={primary ? 1 : 0}
                       dark={dark ? 1 : 0}
                       dark2={dark2 ? 1 : 0}
                       onMouseEnter={onHover}
                       onMouseLeave={onHover}
                     >
-                      { buttonLabel } 
-                      { hover ? <ArrowDownward /> : <ArrowDown /> }
+                      {buttonLabel}
+                      {hover ? <ArrowDownward /> : <ArrowDown />}
                     </Button>
                   </BtnWrap>
                 </TextWrapper>
@@ -157,15 +157,15 @@ const Toolbox = ({
             </Column1>
             <Column2>
               <Fade left cascade>
-                <ImgWrap> 
-                  <Img src={ Javascript } alt="Javascript"/>
-                  <Img src={ Python } alt="Python"/>
-                  <Img src={ MarkupLanguage } alt="HTML5/CSS3"/>
-                  <Img src={ Nodejs } alt="Node.js"/>
-                  <Img src={ ReactIcon } alt="React"/>
-                  <Img src={ Postgres } alt="PostgresQL"/>
-                  <Img src={ MySQL } alt="MySQL"/>
-                  <Img src={ LinuxPenguin } alt="Linux"/>
+                <ImgWrap>
+                  <Img src={Javascript} alt="Javascript" />
+                  <Img src={Python} alt="Python" />
+                  <Img src={MarkupLanguage} alt="HTML5/CSS3" />
+                  <Img src={Nodejs} alt="Node.js" />
+                  <Img src={ReactIcon} alt="React" />
+                  <Img src={Postgres} alt="PostgresQL" />
+                  <Img src={MySQL} alt="MySQL" />
+                  <Img src={LinuxPenguin} alt="Linux" />
                 </ImgWrap>
               </Fade>
             </Column2>
